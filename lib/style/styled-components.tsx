@@ -1,4 +1,4 @@
-import type { ReactNode } from 'react'
+import type { ReactElement } from 'react'
 import React, { useState } from 'react'
 import { ServerStyleSheet, StyleSheetManager } from 'styled-components'
 import { IApp } from '..'
@@ -14,7 +14,7 @@ export const useStyledComponentsRegistry = () => {
 
   const StyledComponentsRegistry = ({ children }: IApp) => (
     <StyleSheetManager sheet={styledComponentsStyleSheet.instance}>
-      {children as ReactNode}
+      {children as ReactElement}
     </StyleSheetManager>
   )
 

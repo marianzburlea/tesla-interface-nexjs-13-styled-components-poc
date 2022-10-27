@@ -1,7 +1,7 @@
-'use client';
+'use client'
 
-import type { ReactNode } from 'react';
-import { ThemeProvider } from 'styled-components';
+import type { ReactNode } from 'react'
+import { ThemeProvider } from 'styled-components'
 
 // color
 const theme = {
@@ -15,14 +15,14 @@ const theme = {
   border: {
     radius: '20',
   },
-};
+}
 
 interface ITheme {
-  children?: ReactNode;
+  children?: ReactNode
 }
 
 const Theme = ({ children }: ITheme) => {
-  return <ThemeProvider theme={theme}>{children}</ThemeProvider>;
-};
+  return <ThemeProvider theme={theme}>{children}</ThemeProvider>
+}
 
-export default Theme;
+export default Theme

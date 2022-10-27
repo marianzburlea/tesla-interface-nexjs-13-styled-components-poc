@@ -4,7 +4,7 @@ import type * as T from './app.type'
 const getTeslaInfo = async () => {
   const result: T.TeslaResult = await (
     await fetch(
-      `https://raw.githubusercontent.com/marianzburlea/simple-api/main/data-base.json`
+      `https://raw.githubusercontent.com/marianzburlea/simple-api/main/data-base.json`,
     )
   ).json()
 

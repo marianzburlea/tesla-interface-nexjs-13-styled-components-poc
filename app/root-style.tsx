@@ -10,7 +10,11 @@ const RootStyleRegistry = ({ children }: IApp) => {
     return <>{styledComponentsFlushEffect()}</>
   })
 
-  return <StyledComponentsRegistry>{children}</StyledComponentsRegistry>
+  return (
+    <StyledComponentsRegistry>
+      <>{children}</>
+    </StyledComponentsRegistry>
+  )
 }
 
 export default RootStyleRegistry

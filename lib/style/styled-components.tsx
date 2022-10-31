@@ -14,7 +14,7 @@ export const useStyledComponentsRegistry = () => {
 
   const StyledComponentsRegistry = ({ children }: IApp) => (
     <StyleSheetManager sheet={styledComponentsStyleSheet.instance}>
-      {children as ReactElement}
+      <>{children as ReactElement}</>
     </StyleSheetManager>
   )
 

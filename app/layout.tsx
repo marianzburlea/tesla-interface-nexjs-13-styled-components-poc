@@ -21,7 +21,9 @@ const Layout = ({ children }: IApp) => (
       {/* Happy Coding */}
       <ErrorBoundary>
         <RootStyleRegistry>
-          <Theme>{children}</Theme>
+          <Theme>
+            <>{children}</>
+          </Theme>
         </RootStyleRegistry>
       </ErrorBoundary>
       {/* Master Freelance or Get Hired on https://wowjob.dev */}
